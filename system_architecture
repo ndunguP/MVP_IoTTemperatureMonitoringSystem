@@ -1,0 +1,14 @@
+flowchart LR
+
+start
+    IoT Device --> Web Server
+    Web Server --> Database
+    Web Server --> Web Client
+    Web Client --> User
+
+note left of IoT Device: Collects temperature data
+note left of Web Server: Stores temperature data and sends notifications
+note left of Database: Stores temperature data
+note left of Web Client: Displays temperature data to user
+note left of User: Monitors temperature data and takes action
+
